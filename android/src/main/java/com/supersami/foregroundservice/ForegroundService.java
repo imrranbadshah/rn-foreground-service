@@ -91,7 +91,7 @@ public class ForegroundService extends Service {
 
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
                 int serviceType = mapServiceType(foregroundServiceType);
-                startForeground(id, notification, serviceType); //https://developer.android.com/about/versions/14/changes/fgs-types-required
+                startForeground(id, notification, 8); //https://developer.android.com/about/versions/14/changes/fgs-types-required
             } else {
                 startForeground(id, notification);
             }
